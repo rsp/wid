@@ -28,17 +28,13 @@ Node: evented I/O for v8 javascript
 
 # What is Deno?
 
-A secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio
+A secure JavaScript/TypeScript runtime<br>built with V8, Rust, and Tokio
 
 ---
 
 # Architecture
 
 Node = Server-side JS with V8 + libuv in C++
-
-Node + TypeScript = explicit transpilation to JavaScript
-
-ts-node = Node + TypeScript with implicit transpilation
 
 Deno = Server-side TS with V8 + Tokio in Rust
 
@@ -67,10 +63,6 @@ it is a runtime written in Rust using Tokio
 
 ---
 
-
-
----
-
 # Installation
 
 <small>
@@ -86,11 +78,13 @@ https://github.com/denoland/deno/releases
 
 ---
 
-# DENO.LAND
+# Example
 
-github.com/denoland/deno/releases
+```
+$ cat example.ts
 
----
+const x: string = 'Hello, world!';
+console.log(x);
 
 # Running
 
@@ -125,9 +119,15 @@ Hello, Deno Warsaw!
 
 No network and filesystem write access by default
 
-`deno --allow-write script.ts`
-
-`deno --allow-net script.ts`
+```
+-A, --allow-all                  all permissions
+    --allow-env                  environment access
+    --allow-hrtime               high resolution time measurement
+    --allow-net=<allow-net>      network access
+    --allow-read=<allow-read>    file system read access
+    --allow-run                  running subprocesses
+    --allow-write=<allow-write>  file system write access
+```
 
 ---
 
@@ -145,7 +145,7 @@ Much easier development.
 
 ---
 
-Import
+Importing URLs
 
 ```
 $ cat hi1.ts 
@@ -195,45 +195,6 @@ Hello, world!
 $ deno run --allow-net=pocztarski.com hi2.ts
 Hello, world!
 ```
----
-
-# Running
-
-`deno run script.ts`
-
-`deno run https://pocztarski.com/hi.ts`
-
----
-
-# Security
-
-No network and filesystem access by default
-
-`deno run --allow-read script.ts`
-
-`deno run --allow-write script.ts`
-
-`deno run --allow-net script.ts`
-
----
-
-# Deno vs ts-node
-
-See my answer on Stack Overflow for details:<br>
-[deno vs ts-node : what's the difference](https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference/55609763#55609763)
-
-For even more details see:<br>
-[node-ts-hello adventures](https://gist.github.com/rsp/f7d6aec4f2bbac3de4bc3f88d871cc70)
-
-Conclusion:<br>
-Deno was 32x faster on startup for a simple example.<br>
-Much easier development.
-
----
-
-# Libraries
-
-Deno: https://deno.land/x/
 
 ---
 
