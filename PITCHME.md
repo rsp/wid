@@ -107,6 +107,24 @@ Hello, world!
 
 ---
 
+# Caching
+
+Deno caches all the files globally by default
+
+Cleaning the cache (on Mac)
+
+```sh
+rm -rvf ~/Library/Caches/deno
+```
+
+Using local caches
+
+```sh
+DENO_DIR=$(pwd)/.deno deno run hi.ts
+```
+
+---
+
 # Deno vs ts-node
 
 See my answer on Stack Overflow for details:<br>
@@ -426,20 +444,24 @@ https://github.com/appcypher/awesome-wasm-langs
 
 ---
 
-# Caching
+# bind/call/apply
 
-<small>Deno downloads and caches all the files globally by default</small>
+```ts
+const o = { x: 1, f() { console.log(this.x++) } };
 
-Cleaning the cache (on Mac)
+const x = f => f();
 
-```sh
-rm -rvf ~/Library/Caches/deno
-```
+x(o.f.bind(o));
 
-Using local caches
+x(() => o.f());
 
-```sh
-DENO_DIR=$(pwd)/.deno deno run hi.ts
+x(() => o.f.bind(o).apply(null));
+
+x(function () { return o.f.bind(o).call(undefined) }.bind(x));
+
+x(((f, t, s = Symbol(), p = new Proxy(t, { get:
+  (a, n) => n === s ? f : t[n] })) => () => p[s]())(o.f, o));
+
 ```
 
 ---
