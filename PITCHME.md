@@ -60,12 +60,17 @@ Works on Linux, macOS and Windows
 # Installation
 
 <small>
-For the adventurous:<br>
-`curl -fsSL https://deno.land/x/install/install.sh | sh`<br>
-`iwr https://deno.land/x/install/install.ps1 | iex`
+For the adventurous:
 
-Or get a single file from:<br>
-https://github.com/denoland/deno/releases
+```sh
+curl -fsSL https://deno.land/x/install/install.sh | sh
+```
+
+```sh
+iwr https://deno.land/x/install/install.ps1 | iex
+```
+
+Or get a single file from:<br><big> https://github.com/denoland/deno/releases </big>
 
 (The scripts above just scrape the GitHub releases page)
 </small>
@@ -163,6 +168,7 @@ $ deno run --allow-read=file.txt script.ts
 ```sh
 $ deno run --allow-write=/tmp script.ts
 ```
+
 ```sh
 $ deno run --allow-net script.ts
 ```
@@ -183,12 +189,14 @@ No need for installing dependencies
 
 Running script with imported URLs
 
-```
+```sh
 $ deno run hi1.ts 
 Compile file:///Users/rsp/talks/deno/git/wid/hi1.ts
 Download https://pocztarski.com/hello.ts
 Hello, world!
+```
 
+```sh
 $ deno run hi1.ts 
 Hello, world!
 ```
@@ -217,14 +225,16 @@ hello();
 
 Running script with dynamic imports
 
-```
+```sh
 $ deno run hi2.ts 
 Compile file:///Users/rsp/talks/deno/git/wid/hi2.ts
 Download https://pocztarski.com/hello.ts
 ️⚠️  Deno requests network access to "https://pocztarski.com/hello.ts". Grant?
 [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 Hello, world!
+```
 
+```sh
 $ deno run --allow-net=pocztarski.com hi2.ts
 Hello, world!
 ```
@@ -233,7 +243,7 @@ Hello, world!
 
 HTTP server
 
-```
+```js
 import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
 
 (async () => {
@@ -255,7 +265,7 @@ import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
 
 Running HTTP server
 
-```
+```sh
 $ deno run server.ts
 Compile file:///Users/rsp/talks/deno/git/wid/server.ts
 Download https://deno.land/std@v0.21.0/http/server.ts
@@ -266,7 +276,9 @@ Download https://deno.land/std@v0.21.0/testing/format.ts
 ️⚠️  Deno requests network access to "0.0.0.0:8000". Grant?
 [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 Listening on http://localhost:8000/
+```
 
+```sh
 $ deno run --allow-net=:8000 server.ts
 Listening on http://localhost:8000/
 ```
@@ -275,7 +287,7 @@ Listening on http://localhost:8000/
 
 Serving files
 
-```
+```js
   for await (const req of server) {
     console.log(`${req.method} ${req.url}`);
     if (req.method === 'GET') {
@@ -294,7 +306,7 @@ Serving files
 
 Running HTTP file server
 
-```
+```sh
 $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
 ```
 
@@ -302,9 +314,11 @@ $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts
 
 WebAssembly
 
-```
+```sh
 $ cat factorial.c
+```
 
+```c
 int factorial(int n) {
   return n < 1 ? 1 : n * factorial(n - 1);
 }
@@ -318,7 +332,7 @@ Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 WebAssembly in Deno
 
-```
+```js
 const mod = new WebAssembly.Module(await Deno.readFile('program.wasm'));
 
 const { exports: { factorial } } = new WebAssembly.Instance(mod);
@@ -330,13 +344,15 @@ console.log(factorial(10));
 
 Running Deno with WebAssembly
 
-```
+```sh
 $ deno run wasm.ts 
 Compile file:///Users/rsp/talks/deno/git/wid/wasm.ts
 ️⚠️  Deno requests read access to "/Users/rsp/talks/deno/git/wid/program.wasm". Grant?
 [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 3628800
+```
 
+```sh
 $ deno run --allow-read=program.wasm wasm.ts 
 3628800
 ```
@@ -414,11 +430,17 @@ https://github.com/appcypher/awesome-wasm-langs
 
 Deno downloads and caches all the files globally by default
 
-Cleaning the cache (on Mac)<br>
-`rm -rvf ~/Library/Caches/deno`
+Cleaning the cache (on Mac)
 
-Using local caches<br>
-`DENO_DIR=$(pwd)/.deno deno run hi.ts`
+```sh
+rm -rvf ~/Library/Caches/deno
+```
+
+Using local caches
+
+```sh
+DENO_DIR=$(pwd)/.deno deno run hi.ts
+```
 
 ---
 
@@ -450,7 +472,7 @@ Third Party Modules: https://deno.land/x/
 5. TypeScript support out of the box
 6. Modern language features
 7. Following Web standards
-8. Modern async/await based API
+8. Modern async/await-based API
 
 ---
 
