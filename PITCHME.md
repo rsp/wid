@@ -1,6 +1,8 @@
 # What is Deno?
 
-A new runtime for modern JavaScript and TypeScript backends for the 2020s
+A new runtime for modern<br>JavaScript and TypeScript backends<br>for the 2020s
+
+Slides: https://pocztarski.com/wid
 
 ---
 
