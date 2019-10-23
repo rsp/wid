@@ -1,10 +1,8 @@
-# What is Deno?
-
-<img src="deno-c.png" height="200">
+# What is Deno?<br><img src="deno-c.png" height="200">
 
 A new runtime for modern<br>JavaScript and TypeScript<br>backends for the 2020s
 
-Slides: https://pocztarski.com/wid
+<small> Slides: https://pocztarski.com/wid </small>
 
 ---
 
