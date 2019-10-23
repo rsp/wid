@@ -442,20 +442,22 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Resources
+# Documentation
 
-<small>
-- https://deno.land/
-- https://denoland.org/
 - https://deno.land/manual.html
 - https://deno.land/typedoc/
+- https://deno.land/std/
 - https://deno.land/x/
 - https://www.typescriptlang.org/
+
+---
+
+# Resources
+
+- https://deno.land/
 - https://deno.news/
 - https://denowarsaw.com/
 - https://denopoland.com/
-
-</small>
 
 ---
 
