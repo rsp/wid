@@ -25,25 +25,17 @@ You may know me from Stack Overflow
 
 ---
 
-# Deno vs Node
-
-Deno: A secure TypeScript runtime on V8
-
-Node: evented I/O for v8 javascript
-
----
-
 # What is Deno?
 
-A secure JavaScript/TypeScript runtime<br>built with V8, Rust, and Tokio
+A [...] JavaScript/TypeScript runtime<br>built with [...], [...], and [...]
 
 ---
 
-# Architecture
+# When and where?
 
-Node = Server-side JS with V8 + libuv in C++
+Created by Ryan Dahl in 2018
 
-Deno = Server-side TS with V8 + Tokio in Rust
+Works on Linux, macOS and Windows
 
 ---
 
@@ -59,9 +51,9 @@ Deno = Server-side TS with V8 + Tokio in Rust
 
 ---
 
-# deno.land
+# How to get it?
 
-https://deno.land/
+<big><big> https://deno.land/ </big></big>
 
 ---
 
@@ -80,7 +72,7 @@ https://github.com/denoland/deno/releases
 
 ---
 
-# Example
+# How to use it?
 
 ```
 $ cat script.ts
@@ -89,15 +81,9 @@ const x: string = 'Hello, world!';
 console.log(x);
 ```
 
----
+`$ deno run script.ts`
 
-# Running
-
-```
-$ deno run script.ts
-
-$ deno run https://pocztarski.com/hi.ts
-```
+`$ deno run https://pocztarski.com/hi.ts`
 
 ---
 
@@ -132,7 +118,7 @@ No network and filesystem write access by default
 
 ---
 
-# Running
+# Examples
 
 ```
 $ deno run --allow-read=file.txt script.ts
@@ -152,8 +138,8 @@ See my answer on Stack Overflow for details:<br>
 For even more details see:<br>
 [node-ts-hello adventures](https://gist.github.com/rsp/f7d6aec4f2bbac3de4bc3f88d871cc70)
 
-Conclusion:<br>
-Deno is 32x faster on startup for a simple example.<br>
+Spoiler:<br>
+Deno was 32x faster on startup for a simple example.<br>
 Much easier development.
 
 ---
@@ -165,6 +151,8 @@ import { hello } from 'https://pocztarski.com/hello.ts';
 
 hello();
 ```
+
+No need for installing dependencies
 
 ---
 
@@ -179,6 +167,16 @@ Hello, world!
 $ deno run hi1.ts 
 Hello, world!
 ```
+
+---
+
+Running remote scripts
+
+```
+$ deno run https://pocztarski.com/hi.ts
+```
+
+No need for installing tools
 
 ---
 
@@ -415,6 +413,19 @@ Third Party Modules: https://deno.land/x/
 2. V8 (engine by Google)
 3. TypeScript (language by Microsoft)
 4. Rust (language by Mozilla)
+
+---
+
+# Technical advantages
+
+1. Easy installation
+2. Easy development
+3. Secure by default
+4. Fine-grained privileges
+5. TypeScript support out of the box
+6. Modern language features
+7. Following Web standards
+8. Modern async/await based API
 
 ---
 
