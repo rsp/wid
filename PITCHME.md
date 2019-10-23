@@ -198,7 +198,8 @@ Running
 $ deno run hi2.ts 
 Compile file:///Users/rsp/talks/deno/git/wid/hi2.ts
 Download https://pocztarski.com/hello.ts
-️⚠️  Deno requests network access to "https://pocztarski.com/hello.ts". Grant? [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
+️⚠️  Deno requests network access to "https://pocztarski.com/hello.ts". Grant?
+[a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 Hello, world!
 
 $ deno run --allow-net=pocztarski.com hi2.ts
@@ -239,7 +240,8 @@ Download https://deno.land/std@v0.21.0/io/bufio.ts
 ...
 Download https://deno.land/std@v0.21.0/testing/diff.ts
 Download https://deno.land/std@v0.21.0/testing/format.ts
-️⚠️  Deno requests network access to "0.0.0.0:8000". Grant? [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
+️⚠️  Deno requests network access to "0.0.0.0:8000". Grant?
+[a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 Listening on http://localhost:8000/
 
 $ deno run --allow-net=:8000 server.ts
@@ -308,7 +310,8 @@ Running
 ```
 $ deno run wasm.ts 
 Compile file:///Users/rsp/talks/deno/git/wid/wasm.ts
-️⚠️  Deno requests read access to "/Users/rsp/talks/deno/git/wid/program.wasm". Grant? [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
+️⚠️  Deno requests read access to "/Users/rsp/talks/deno/git/wid/program.wasm". Grant?
+[a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
 3628800
 
 $ deno run --allow-read=program.wasm wasm.ts 
