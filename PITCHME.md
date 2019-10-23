@@ -175,7 +175,7 @@ $ deno run --allow-net script.ts
 
 ---
 
-Importing URLs
+# Importing URLs
 
 ```
 import { hello } from 'https://pocztarski.com/hello.ts';
@@ -213,7 +213,7 @@ No need for installing tools
 
 ---
 
-Dynamic imports and top level await
+# Dynamic imports<br>top level await
 
 ```
 const { hello } = await import('https://pocztarski.com/hello.ts');
@@ -241,7 +241,7 @@ Hello, world!
 
 ---
 
-HTTP server
+# HTTP server
 
 ```js
 import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
@@ -285,7 +285,7 @@ Listening on http://localhost:8000/
 
 ---
 
-Serving files
+# Serving files
 
 ```js
   for await (const req of server) {
@@ -312,7 +312,7 @@ $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts
 
 ---
 
-WebAssembly
+# WebAssembly
 
 ```sh
 $ cat factorial.c
@@ -330,7 +330,7 @@ Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 ---
 
-WebAssembly in Deno
+# WebAssembly in Deno
 
 ```js
 const mod = new WebAssembly.Module(await Deno.readFile('program.wasm'));
