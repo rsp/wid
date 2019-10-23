@@ -322,6 +322,14 @@ Listening on http://localhost:8000/
 
 ---
 
+Running HTTP file server
+
+```sh
+$ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
+```
+
+---
+
 # ts-essentials
 
 The essential TypeScript types
@@ -368,14 +376,6 @@ type B = MarkRequired<A, 'y'>;
 const a: A = { x: 10 }; // OK
 const b: B = { x: 10 }; // ERROR: Property 'y' is missing in type '{ x: number; }'
                         //        but required in type 'Required<Pick<A, "y">>'.
-```
-
----
-
-Running HTTP file server
-
-```sh
-$ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
 ```
 
 ---
