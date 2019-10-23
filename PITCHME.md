@@ -488,4 +488,4 @@ Slides: https://pocztarski.com/wid
 
 ## [pocztarski.com](https://pocztarski.com)
 
-“The only thing that matters in software is the experience of the user.” - Ryan Dahl
+“The only thing that matters in software<br>is the experience of the user.” - Ryan Dahl
