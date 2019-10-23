@@ -52,17 +52,6 @@ Deno = Server-side TS with V8 + Tokio in Rust
 
 ---
 
-# Deno
-
-deno is a standalone executable<br>
-it doesn't use Node.js<br>
-it is distributed as a single binary<br>
-it contains the TypeScript compiler as a V8 snapshot<br>
-it has no dependencies<br>
-it is a runtime written in Rust using Tokio
-
----
-
 # Installation
 
 <small>
@@ -95,12 +84,6 @@ console.log(x);
 $ deno run script.ts
 
 $ deno run https://pocztarski.com/hi.ts
-
-$ deno run --allow-read=file.txt script.ts
-
-$ deno run --allow-write=/tmp script.ts
-
-$ deno run --allow-net script.ts
 ```
 
 ---
@@ -130,6 +113,18 @@ No network and filesystem write access by default
     --allow-read=<allow-read>    file system read access
     --allow-run                  running subprocesses
     --allow-write=<allow-write>  file system write access
+```
+
+---
+
+# Running
+
+```
+$ deno run --allow-read=file.txt script.ts
+
+$ deno run --allow-write=/tmp script.ts
+
+$ deno run --allow-net script.ts
 ```
 
 ---
@@ -249,6 +244,21 @@ Using local caches<br>
 - https://denopoland.com/
 
 </small>
+
+---
+
+# Summary
+
+Deno is a JavaScript runtime<br>
+It supports TypeScript out of the box<br>
+It contains a compiled TypeScript compiler<br>
+It uses the V8 engine<br>
+It is written in Rust using Tokio<br>
+It is a standalone executable<br>
+It has no dependencies<br>
+It can import modules from URLs<br>
+It supports dynamic imports<br>
+It supports top-level await<br>
 
 ---
 
