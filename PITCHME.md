@@ -21,7 +21,7 @@ You may know me from Stack Overflow
 
 # Slides
 
-# [pocztarski.com/wid](https://pocztarski.com/wid)
+# <small> [pocztarski.com/wid](https://pocztarski.com/wid) </small>
 
 ---
 
