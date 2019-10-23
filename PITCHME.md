@@ -208,6 +208,16 @@ Using local caches<br>
 
 ---
 
+# Libraries
+
+Built-in API: https://deno.land/typedoc/
+
+Standard Modules: https://deno.land/std/
+
+Third Party Modules: https://deno.land/x/
+
+---
+
 # Why it will get traction
 
 1. Ryan Dahl (known for Node's amazing success)
