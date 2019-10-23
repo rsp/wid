@@ -145,7 +145,7 @@ Hello, Deno Warsaw!
 
 # Security
 
-No network and filesystem write access by default
+No network and filesystem ~~write~~ access by default
 
 ```
 -A, --allow-all                  all permissions
