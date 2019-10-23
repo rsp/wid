@@ -450,16 +450,13 @@ Third Party Modules: https://deno.land/x/
 
 # Summary
 
-Deno is a JavaScript runtime<br>
-It supports TypeScript out of the box<br>
-It contains a compiled TypeScript compiler<br>
-It uses the V8 engine<br>
-It is written in Rust using Tokio<br>
+Deno is a JavaScript/TypeScript runtime<br>
 It is a standalone executable<br>
 It has no dependencies<br>
 It can import modules from URLs<br>
 It supports dynamic imports<br>
 It supports top-level await<br>
+It provides a restricted sandbox
 
 ---
 
