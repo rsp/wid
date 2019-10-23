@@ -146,8 +146,6 @@ Much easier development.
 Importing URLs
 
 ```
-$ cat hi1.ts 
-
 import { hello } from 'https://pocztarski.com/hello.ts';
 
 hello();
@@ -172,8 +170,6 @@ Hello, world!
 Dynamic import and top level await
 
 ```
-$ cat hi2.ts
-
 const { hello } = await import('https://pocztarski.com/hello.ts');
 
 hello();
@@ -192,6 +188,47 @@ Hello, world!
 
 $ deno run --allow-net=pocztarski.com hi2.ts
 Hello, world!
+```
+
+---
+
+HTTP server
+
+```
+import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
+
+(async () => {
+
+  let n = 0;
+  const encoder = new TextEncoder();
+  const server = serve(':8000');
+  console.log('Listening on http://localhost:8000/');
+
+  for await (const req of server) {
+    const message = `Hello #${++n}, Deno Warsaw!\n`;
+    req.respond({ body: encoder.encode(message) });
+  }
+
+})();
+```
+
+---
+
+Running
+
+```
+$ deno run server.ts
+Compile file:///Users/rsp/talks/deno/git/wid/server.ts
+Download https://deno.land/std@v0.21.0/http/server.ts
+Download https://deno.land/std@v0.21.0/io/bufio.ts
+...
+Download https://deno.land/std@v0.21.0/testing/diff.ts
+Download https://deno.land/std@v0.21.0/testing/format.ts
+️⚠️  Deno requests network access to "0.0.0.0:8000". Grant? [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
+Listening on http://localhost:8000/
+
+$ deno run --allow-net=:8000 server.ts
+Listening on http://localhost:8000/
 ```
 
 ---
