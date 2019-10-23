@@ -428,7 +428,7 @@ https://github.com/appcypher/awesome-wasm-langs
 
 # Caching
 
-Deno downloads and caches all the files globally by default
+<small>Deno downloads and caches all the files globally by default</small>
 
 Cleaning the cache (on Mac)
 
