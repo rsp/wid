@@ -74,16 +74,20 @@ https://github.com/denoland/deno/releases
 
 # How to use it?
 
-```
+```sh
 $ cat script.ts
 
 const x: string = 'Hello, world!';
 console.log(x);
 ```
 
-`$ deno run script.ts`
+```sh
+$ deno run script.ts
+```
 
-`$ deno run https://pocztarski.com/hi.ts`
+```sh
+$ deno run https://pocztarski.com/hi.ts
+```
 
 ---
 
