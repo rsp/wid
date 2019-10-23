@@ -71,7 +71,7 @@ iwr https://deno.land/x/install/install.ps1 | iex
 
 Or get a single file from:<br><big> https://github.com/denoland/deno/releases </big>
 
-(The scripts above just scrape the GitHub releases page)
+<small>(The scripts above just scrape the GitHub releases page)</small>
 
 ---
 
