@@ -310,7 +310,7 @@ Emscripten: https://emscripten.org/
 
 AssemblyScript: https://assemblyscript.org/
 
-The WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
+WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 
 WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
