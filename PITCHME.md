@@ -322,32 +322,6 @@ Listening on http://localhost:8000/
 
 ---
 
-Running HTTP file server
-
-```sh
-$ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
-```
-
----
-
-# WebAssembly
-
-```sh
-$ cat factorial.c
-```
-
-```c
-int factorial(int n) {
-  return n < 1 ? 1 : n * factorial(n - 1);
-}
-```
-
-Compile with Emscripten: https://emscripten.org/
-
-Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
-
----
-
 # ts-essentials
 
 The essential TypeScript types
@@ -393,6 +367,32 @@ const a: A = { x: 10 }; // OK
 const b: B = { x: 10 }; // ERROR: Property 'y' is missing in type '{ x: number; }'
                         //        but required in type 'Required<Pick<A, "y">>'.
 ```
+
+---
+
+Running HTTP file server
+
+```sh
+$ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
+```
+
+---
+
+# WebAssembly
+
+```sh
+$ cat factorial.c
+```
+
+```c
+int factorial(int n) {
+  return n < 1 ? 1 : n * factorial(n - 1);
+}
+```
+
+Compile with Emscripten: https://emscripten.org/
+
+Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 ---
 
