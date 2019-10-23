@@ -500,8 +500,9 @@ It provides a restricted sandbox
 
 # Later Tonight
 
-- How to contribute to Deno? An example of adding functionality and overview of variety of places where you can help Deno by Michał Sabiniarz
--  Deno internals - how modern runtime is built by Bartek Iwańczuk
+- How to contribute to Deno? An example of adding functionality and overview of variety of places where you can help Deno<br>by Michał Sabiniarz
+
+-  Deno internals - how modern runtime is built<br>by Bartek Iwańczuk
 
 ---
 
