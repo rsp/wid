@@ -79,7 +79,9 @@ Or get a single file from:<br><big> https://github.com/denoland/deno/releases </
 
 ```sh
 $ cat script.ts
+```
 
+```ts
 const x: string = 'Hello, world!';
 console.log(x);
 ```
