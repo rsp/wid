@@ -233,6 +233,33 @@ Listening on http://localhost:8000/
 
 ---
 
+Serving files
+
+```
+  for await (const req of server) {
+    console.log(`${req.method} ${req.url}`);
+    if (req.method === 'GET') {
+      try {
+        req.respond({ body: await Deno.readFile(`.${req.url}`) });
+      } catch (e) {
+        req.respond({ status: 404, body: encoder.encode('Not Found') });
+      }
+    } else {
+      req.respond({ status: 405, body: encoder.encode('Method Not Allowed') });
+    }
+  }
+```
+
+---
+
+Running
+
+```
+$ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
+```
+
+---
+
 # Caching
 
 Deno downloads and caches all the files globally by default
