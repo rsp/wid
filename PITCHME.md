@@ -260,6 +260,36 @@ $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts
 
 ---
 
+WebAssembly
+
+```
+$ cat factorial.c
+
+int factorial(int n) {
+  return n < 1 ? 1 : n * factorial(n - 1);
+}
+```
+
+Compile with Emscripten: https://emscripten.org/
+
+Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
+
+---
+
+Running
+
+```
+$ deno run wasm.ts 
+Compile file:///Users/rsp/talks/deno/git/wid/wasm.ts
+️⚠️  Deno requests read access to "/Users/rsp/talks/deno/git/wid/program.wasm". Grant? [a/y/n/d (a = allow always, y = allow once, n = deny once, d = deny always)] y
+3628800
+
+$ deno run --allow-read=program.wasm wasm.ts 
+3628800
+```
+
+---
+
 # Caching
 
 Deno downloads and caches all the files globally by default
