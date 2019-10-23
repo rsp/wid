@@ -359,7 +359,8 @@ https://github.com/krzkaczor/ts-essentials
 Merge types
 
 ```ts
-import { Merge } from 'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+import { Merge } from
+  'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
 
 type A = {
   a: number;
@@ -378,7 +379,8 @@ const x: Merge<A, B> = { a: 4, b: 2 };
 MarkRequired
 
 ```ts
-import { MarkRequired } from 'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+import { MarkRequired } from
+  'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
 
 class A {
   x: number;
