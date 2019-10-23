@@ -314,6 +314,8 @@ The WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
 
 WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
+Languages compiled to WebAssembly: https://github.com/appcypher/awesome-wasm-langs
+
 ---
 
 # Caching
