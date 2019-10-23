@@ -328,6 +328,8 @@ The essential TypeScript types
 
 https://github.com/krzkaczor/ts-essentials
 
+It works in Deno out of the box
+
 ---
 
 Merge types
