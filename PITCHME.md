@@ -102,13 +102,10 @@ Hello, world!
 
 ---
 
-Deno vs ts-node
+# Deno vs ts-node
 
 See my answer on Stack Overflow for details:<br>
 [deno vs ts-node : what's the difference](https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference/55609763#55609763)
-
-For even more details see:<br>
-[node-ts-hello adventures](https://gist.github.com/rsp/f7d6aec4f2bbac3de4bc3f88d871cc70)
 
 Spoiler:<br>
 Deno was 32x faster on startup for a simple example.<br>
@@ -124,7 +121,7 @@ $ deno run https://pocztarski.com/hi.ts
 
 ---
 
-# Running
+Running remote scripts
 
 ```sh
 $ deno run https://pocztarski.com/hi.ts
@@ -184,7 +181,7 @@ No need for installing dependencies
 
 ---
 
-Running
+Running script with imported URLs
 
 ```
 $ deno run hi1.ts 
@@ -218,7 +215,7 @@ hello();
 
 ---
 
-Running
+Running script with dynamic imports
 
 ```
 $ deno run hi2.ts 
@@ -256,7 +253,7 @@ import { serve } from 'https://deno.land/std@v0.21.0/http/server.ts';
 
 ---
 
-Running
+Running HTTP server
 
 ```
 $ deno run server.ts
@@ -295,7 +292,7 @@ Serving files
 
 ---
 
-Running
+Running HTTP file server
 
 ```
 $ deno run --allow-net=:8000 --allow-read=./dir --no-prompt serve.ts 
@@ -331,7 +328,7 @@ console.log(factorial(10));
 
 ---
 
-Running
+Running Deno with WebAssembly
 
 ```
 $ deno run wasm.ts 
