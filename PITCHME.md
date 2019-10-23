@@ -290,6 +290,20 @@ $ deno run --allow-read=program.wasm wasm.ts
 
 ---
 
+# WebAssembly
+
+WebAssembly: https://webassembly.org/
+
+Emscripten: https://emscripten.org/
+
+AssemblyScript: https://assemblyscript.org/
+
+The WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
+
+WasmFiddle: https://wasdk.github.io/WasmFiddle/
+
+---
+
 # Caching
 
 Deno downloads and caches all the files globally by default
