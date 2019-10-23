@@ -59,7 +59,6 @@ Works on Linux, macOS and Windows
 
 # Installation
 
-<small>
 For the adventurous:
 
 ```sh
@@ -73,7 +72,6 @@ iwr https://deno.land/x/install/install.ps1 | iex
 Or get a single file from:<br><big> https://github.com/denoland/deno/releases </big>
 
 (The scripts above just scrape the GitHub releases page)
-</small>
 
 ---
 
