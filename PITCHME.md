@@ -387,11 +387,9 @@ class A {
   y?: number;
   z?: number;
 }
-
 type B = MarkRequired<A, 'y'>;
 
 const a: A = { x: 10 }; // OK
-
 const b: B = { x: 10 }; // ERROR: Property 'y' is missing in type '{ x: number; }'
                         //        but required in type 'Required<Pick<A, "y">>'.
 ```
