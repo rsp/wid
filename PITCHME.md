@@ -360,7 +360,7 @@ Merge types
 
 ```ts
 import { Merge } from
-  'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+  'https://raw.githack.com/krzkaczor/ts-essentials/master/lib/types.ts';
 
 type A = {
   a: number;
@@ -380,7 +380,7 @@ MarkRequired
 
 ```ts
 import { MarkRequired } from
-  'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+  'https://raw.githack.com/krzkaczor/ts-essentials/master/lib/types.ts';
 
 class A {
   x: number;
