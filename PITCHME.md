@@ -53,6 +53,12 @@ Deno = Server-side TS with V8 + Tokio in Rust
 
 ---
 
+# deno.land
+
+https://deno.land/
+
+---
+
 # Installation
 
 <small>
@@ -88,6 +94,8 @@ $ deno run https://pocztarski.com/hi.ts
 ```
 
 ---
+
+# Running
 
 ```
 $ deno run https://pocztarski.com/hi.ts
