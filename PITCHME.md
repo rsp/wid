@@ -19,6 +19,12 @@ You may know me from Stack Overflow
 
 ---
 
+# Slides
+
+# https://pocztarski.com/wid
+
+---
+
 # Deno vs Node
 
 Deno: A secure TypeScript runtime on V8
