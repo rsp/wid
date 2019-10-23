@@ -85,6 +85,39 @@ console.log(x);
 $ deno run script.ts
 ```
 
+---
+
+# Running
+
+```sh
+$ deno run script.ts 
+Compile file:///Users/rsp/talks/deno/git/wid/script.ts
+Hello, world!
+```
+
+```sh
+$ deno run script.ts 
+Hello, world!
+```
+
+---
+
+Deno vs ts-node
+
+See my answer on Stack Overflow for details:<br>
+[deno vs ts-node : what's the difference](https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference/55609763#55609763)
+
+For even more details see:<br>
+[node-ts-hello adventures](https://gist.github.com/rsp/f7d6aec4f2bbac3de4bc3f88d871cc70)
+
+Spoiler:<br>
+Deno was 32x faster on startup for a simple example.<br>
+Much easier development.
+
+---
+
+# Remote scripts
+
 ```sh
 $ deno run https://pocztarski.com/hi.ts
 ```
@@ -93,13 +126,15 @@ $ deno run https://pocztarski.com/hi.ts
 
 # Running
 
-```
+```sh
 $ deno run https://pocztarski.com/hi.ts
 Download https://pocztarski.com/hi.ts
 Compile https://pocztarski.com/hi.ts
 Download https://pocztarski.com/hello.ts
 Hello, Deno Warsaw!
+```
 
+```sh
 $ deno run https://pocztarski.com/hi.ts
 Hello, Deno Warsaw!
 ```
@@ -124,27 +159,16 @@ No network and filesystem write access by default
 
 # Examples
 
-```
+```sh
 $ deno run --allow-read=file.txt script.ts
+```
 
+```sh
 $ deno run --allow-write=/tmp script.ts
-
+```
+```sh
 $ deno run --allow-net script.ts
 ```
-
----
-
-Deno vs ts-node
-
-See my answer on Stack Overflow for details:<br>
-[deno vs ts-node : what's the difference](https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference/55609763#55609763)
-
-For even more details see:<br>
-[node-ts-hello adventures](https://gist.github.com/rsp/f7d6aec4f2bbac3de4bc3f88d871cc70)
-
-Spoiler:<br>
-Deno was 32x faster on startup for a simple example.<br>
-Much easier development.
 
 ---
 
@@ -184,7 +208,7 @@ No need for installing tools
 
 ---
 
-Dynamic import and top level await
+Dynamic imports and top level await
 
 ```
 const { hello } = await import('https://pocztarski.com/hello.ts');
