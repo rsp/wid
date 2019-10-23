@@ -81,10 +81,13 @@ https://github.com/denoland/deno/releases
 # Example
 
 ```
-$ cat example.ts
+$ cat script.ts
 
 const x: string = 'Hello, world!';
 console.log(x);
+```
+
+---
 
 # Running
 
