@@ -330,7 +330,7 @@ Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 ---
 
-# WebAssembly in Deno
+# WebAssembly<br>in Deno
 
 ```js
 const mod = new WebAssembly.Module(await Deno.readFile('program.wasm'));
