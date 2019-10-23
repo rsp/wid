@@ -348,6 +348,54 @@ Online with WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 ---
 
+# ts-essentials
+
+The essential TypeScript types
+
+https://github.com/krzkaczor/ts-essentials
+
+---
+
+Merge types
+
+```ts
+import { Merge } from 'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+
+type A = {
+  a: number;
+  b: string;
+};
+
+type B = {
+  b: number;
+};
+
+const x: Merge<A, B> = { a: 4, b: 2 };
+```
+
+---
+
+MarkRequired
+
+```ts
+import { MarkRequired } from 'https://raw.githubusercontent.com/krzkaczor/ts-essentials/master/lib/types.ts';
+
+class A {
+  x: number;
+  y?: number;
+  z?: number;
+}
+
+type B = MarkRequired<A, 'y'>;
+
+const a: A = { x: 10 }; // OK
+
+const b: B = { x: 10 }; // ERROR: Property 'y' is missing in type '{ x: number; }'
+                        //        but required in type 'Required<Pick<A, "y">>'.
+```
+
+---
+
 # WebAssembly<br>in Deno
 
 ```js
