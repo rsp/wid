@@ -437,7 +437,7 @@ Third Party Modules: https://deno.land/x/
 - [10 Things I Regret About Node.js by Ryan Dahl (2018)](https://www.youtube.com/watch?v=M3BM9TB-8yA)
 - [Deno, A New Server-Side Runtime by Ryan Dahl (2018)](https://www.youtube.com/watch?v=FlTG0UXRAkE)
 - [From Node.js to Deno - JS/TS runtime built with V8 and Rust by Rafał Pocztarski (2019)](https://www.youtube.com/watch?v=Aib1OZLy0_c&t=5s)
-- What is Deno? A new runtime for modern<br>JavaScript and TypeScript<br>backends for the 2020s by Rafał Pocztarski (Tonight)
+- What is Deno? A new runtime for modern JavaScript and TypeScript backends for the 2020s by Rafał Pocztarski (Tonight)
 - How to contribute to Deno? An example of adding functionality and overview of variety of places where you can help Deno by Michał Sabiniarz (Tonight)
 -  Deno internals - how modern runtime is built by Bartek Iwańczuk (Tonight)
 
