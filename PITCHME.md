@@ -323,14 +323,11 @@ $ deno run --allow-read=program.wasm wasm.ts
 # WebAssembly
 
 WebAssembly: https://webassembly.org/
-
-Emscripten: https://emscripten.org/
-
-AssemblyScript: https://assemblyscript.org/
+<br>Emscripten: https://emscripten.org/
+<br>AssemblyScript: https://assemblyscript.org/
+<br>WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 WebAssembly Binary Toolkit: https://github.com/WebAssembly/wabt
-
-WasmFiddle: https://wasdk.github.io/WasmFiddle/
 
 Languages compiled to WebAssembly: https://github.com/appcypher/awesome-wasm-langs
 
