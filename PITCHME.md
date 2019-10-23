@@ -203,7 +203,7 @@ Hello, world!
 
 ---
 
-Running remote scripts
+# Running remote scripts
 
 ```
 $ deno run https://pocztarski.com/hi.ts
