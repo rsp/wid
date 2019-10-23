@@ -416,7 +416,7 @@ Third Party Modules: https://deno.land/x/
 
 ---
 
-# Technical advantages
+# Advantages
 
 1. Easy installation
 2. Easy development
